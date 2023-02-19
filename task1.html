@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Планировщик задач</title>
+</head>
+<body>
+    <main class="container task-manager">
+        <h1 class="task-manager__title">
+            Планировщик задач
+        </h1>
+        <div class="task-manager__form form">
+            <h2 class="form__title title">Добавить задачу</h2>
+            <div class="form__row">
+                <input type="text" class="form__input" placeholder="Новая задача" value="">
+                <button class="form__button btn">Добавить</button>
+            </div>
+            <div class="alert">Новая задача не указана</div>
+        </div>
+        <div class="task-manager__tasks-list">
+            <h2 class="task-manager__tasks-title title">Список задач</h2>
+            <div class="task-manager__no-task-field task-manager__no-task-field_active">Нет задач</div>
+            <ul class="task-manager__tasks">
+                <!-- <li class="task-manager__task">
+                    <div class="task-manager__task-item task-manager__task-item_done">
+                        <p class="task-manager__task-name">Купить слона</p>
+                        <input class="task-manager__checkbox" type="checkbox" checked>
+                    </div>
+                </li> -->
+            </ul>
+            <div class="task-manager__btn">
+                <button class="remove-btn btn" disabled>Очистить список задач</button>
+            </div>
+        </div>
+    </main>
+    <script src="./main.js" type="module"></script>  
+</body>
+</html>
